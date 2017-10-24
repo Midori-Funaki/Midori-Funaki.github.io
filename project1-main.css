@@ -1,0 +1,177 @@
+.relativeFrame{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.homeContainer{
+    position: absolute;
+    width: 100%;
+    max-height: 300px;
+    left: 0;
+    top: 35%;
+}
+
+.homeContainer h1{
+    font-size: 40px;
+    font-family: 'Source Sans Pro',sans-serif;
+}
+
+.homeContainer span{
+    font-size: 26px;
+}
+
+.homeContainer p{
+    font-size: 48px;
+    font-family: 'Merriweather',serif;
+    color: green;
+    font-weight: bold;
+    animation-name: slideInDown;
+}
+
+.rotateFrame1,
+.rotateFrame2,
+.rotateFrame3,
+.rotateFrame4{
+    font-family: 'Merriweather',serif;
+    font-size: 24px;
+    color: white;
+}
+
+.rotateFrame1{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border: 2px solid orange;
+    background: transparent;
+    left: 50%;
+    top: -40%;
+    transform: rotate(30deg);
+    background-image: url("./images/portfolio1.jpg");
+}
+
+.rotateFrame2{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border: 2px solid pink;
+    background: pink;
+    left: 50%;
+    top: 70%;
+    transform: rotate(-30deg);
+    background-image: url("./images/skills1.jpg");
+}
+
+.rotateFrame3{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border: 2px solid green;
+    background: green;
+    left: -20%;
+    top: 70%;
+    transform: rotate(30deg);
+    background-image: url("./images/contact2.jpg");
+    background-size: 50%;
+}
+
+.rotateFrame4{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border: 2px solid yellow;
+    background: yellow;
+    left: -20%;
+    top: -40%;
+    transform: rotate(-30deg);
+    background-image: url("./images/about1.jpg");
+}
+
+.menuBottomSpace{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.menuTopSpace{
+    padding-top: 25px;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.overOrange{
+    background: rgba(241,133,0,0.5);
+}
+
+.overPink{
+    background: rgba(248,77,103,0.5);
+}
+
+.overGreen{
+    background: rgba(91, 118, 3, 0.5);
+}
+
+.overYellow{
+    background: rgba(243,216,77,0.5);
+}
+
+.overOrange:hover{
+    background: rgba(241,133,0,0.9);
+}
+
+.overPink:hover{
+    background: rgba(248,77,103,0.9);
+}
+
+.overGreen:hover{
+    background: rgba(91, 118, 3, 0.9);
+}
+
+.overYellow:hover{
+    background: rgba(243,216,77,0.9);
+}
+
+
+@media screen and (max-width:880px){
+    .rotateFrame1{
+        width: 100%;
+        height: 70%;
+        transform: rotate(40deg);
+        left: 50%;
+        top: -45%;
+        background-size: 80%;
+    }
+
+    .rotateFrame2{
+        width: 100%;
+        height: 70%;
+        left: 50%;
+        top: 75%;
+        transform: rotate(-40deg);
+    }
+
+    .rotateFrame3{
+        width: 100%;
+        height: 70%;
+        left: -50%;
+        top: 75%;
+        transform: rotate(40deg);
+        background-size: 80%;
+    }
+
+    .rotateFrame4{
+        width: 100%;
+        height: 70%;
+        left: -50%;
+        top: -45%;
+        transform: rotate(-40deg);
+        background-size: 230%
+    }
+}

@@ -1,0 +1,143 @@
+hr{
+    width: 0;
+    border-color: rgb(255,140,0);
+    border-width: 7px;
+    margin-bottom: 20px;
+}
+
+#orangeHome{
+    position: absolute;
+    left: 3vw;
+    bottom: 3vh;
+    z-index: 4;
+}
+
+#orangeHome img{
+    width:16vw;
+    height:16vw;
+    max-width: 100px;
+    max-height: 100px;
+    z-index: 5;
+}
+
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sideBar{
+    background:rgb(255,178,102);
+}
+
+.sidebar-nav{
+    height: 100vh;
+    z-index: -1;
+}
+
+.sidebar-nav .navbar ul{
+    float: none;
+    display: block;
+}
+
+.sidebar-nav .navbar li{
+    float: none;
+    display: block;
+}
+
+.navbar-default{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.navbar-default .navbar-collapse{
+    border: none;
+}
+
+.navbar-toggle{
+    border-color: rgb(255,114,0);
+}
+
+.navbar li{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    color: rgb(255,229,204);
+    text-align: center;
+    border-bottom: 0px solid rgb(255,229,204);
+}
+
+h1, h3{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: 300;
+}
+
+p{
+    font-family: 'Merriweather',serif;
+}
+
+.video-container{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+iframe{
+    margin-top: 50px;
+    height:350px;
+    width: 90%;
+}
+
+.jumbotron{
+    height: 300px;
+    width: 250px;
+    min-width: 200px;
+}
+
+.contentPart{
+    position:fixed;
+    height: 100%;
+    width: 83%;
+    overflow: scroll;
+    padding-right: 2vw;
+    padding-left: 3vw;
+}
+
+.container .jumbotron, 
+.container-fluid .jumbotron {
+    margin: 100px auto;
+}
+
+section{
+    background: transparent;
+}
+
+@media (max-width:768px){
+    .sideBar{
+        background: none;
+    }
+
+    .navbar-toggle{
+        float: left;
+    }
+
+    .navbar li{
+        position: relative;
+        color: rgb(255,114,0);
+        transform: rotate(90deg);
+        margin-top: 30px;
+        padding-bottom: 0px;
+    }
+    
+}

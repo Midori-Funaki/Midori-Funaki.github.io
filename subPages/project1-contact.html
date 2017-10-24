@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title></Title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- Original CSS -->
+        <link rel="stylesheet" type="text/css" href="project1-portfolio.css">
+        <link rel="stylesheet" type="text/css" href="project1-contact.css">  
+        <!-- Font Awesome -->
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">               
+    </head>
+    <body>
+        <section>
+            <div id="orangeHome">
+                <img id="greenArrow" alt="Home Button" src="./images/arrowGreen.png">
+            </div><!-- /.orangeHome -->
+            <div class="container-fluid">
+                <div class="row">
+                    <nav>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 sideBar">
+                            <div class="sidebar-nav">
+                                <div class="navbar navbar-default">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <span class="visible-xs navbar-brand"></span>
+                                    </div><!-- /.navbar-header -->
+                                    <div id="navCollapse" class="navbar-collapse collapse sidebar-navbar-collapse">
+                                        <ul class="nav navbar-nav">
+                                            <li class="navListGreen goPortfolio"><a href="#"></a>Portfoio</li>
+                                            <li class="navListGreen goSkills"><a href="#"></a>Skills</li>
+                                            <li class="navListGreen goAbout"><a href="#"></a>About</li>
+                                        </ul>
+                                    </div><!-- /.nav-collapse -->
+                                </div><!-- /.navbar -->
+                            </div><!-- /. sidebar-nav -->
+                        </div><!-- /. col-xs- -->
+                    </nav>
+                <div class="col-xs-10 col-sm-10 cold-md-10 col-lg-10">
+                    <div class="contentPart">
+                        <h1 class="text-center">Contact</h1>
+                        <hr>                        
+                        <p class="text-center">Get in touch</p>
+                        <div class="row iconBox text-center">
+                            <div class="iconBox">
+                                <div class="col-xs-6 col-sm-4 col-lg-3">
+                                    <a href="#"><i class="fa fa-github fa-5x" aria-hidden="true"></i></a>
+                                    <p>github</p>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-lg-3">
+                                    <a href="#"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
+                                    <p>LinkedIn</p>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-lg-3">
+                                    <a href="#"><i class="fa fa-facebook-square fa-5x" aria-hidden="true"></i></a>
+                                    <p>Facebook</p>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-lg-3">
+                                    <a href="#"><i class="fa fa-instagram fa-5x" aria-hidden="true"></i></a>
+                                    <p>Instagram</p>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-lg-3">
+                                    <a href="#"><i class="fa fa-twitter fa-5x" aria-hidden="true"></i></a>
+                                    <p>Twitter</p>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-lg-3">
+                                    <a href="mailto:example@email.com"><i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i></a>
+                                    <p>Email</p>
+                                </div>
+                            </div><!-- /. iconBox -->
+                        </div>
+                        <div class="quickContact">
+                            <p id="errorMessage"></p>
+                            <div id="thankYou"></div>
+                            <h3>Quick Contact</h3>
+                            <div class="form-group">
+                                <input id="nameInput" class="form-control" type="text" value="" placeholder="Name"/>
+                            </div>
+                            <div class="form-group">
+                                <input id="emailInput" class="form-control" type="text" value="" placeholder="Email"/>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="messageInput" class="form-control" row="15" type="text" value="" placeholder="Message"></textarea>
+                            </div>
+                            <button id="messageSubmit" type="button" class="btn btn-success">Submit</button>
+                        </div>
+                    </div><!-- contentPart -->
+                </div><!-- /.col-xs-9 -->
+            </div><!-- /. row -->
+            </div><!-- /.container -->
+        </section>
+        <!-- JQuery-->
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- JS -->
+        <script src="./project1-contact.js"></script>
+    </body>
+</html>
