@@ -21,7 +21,7 @@ $(document).ready(function(){
     });
 
     $('#orangeArrow').click(function(){
-        window.location.href = '../project1-main.html';
+        window.location.href = '../index.html';
     })
 
     $('.goAbout').click(function(){

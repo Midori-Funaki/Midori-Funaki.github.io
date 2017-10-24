@@ -19,7 +19,7 @@ $(document).ready(function(){
     });
 
     $('#pinkArrow').click(function(){
-        window.location.href = '../project1-main.html';
+        window.location.href = '../index.html';
     })
 
     $('.goPortfolio').click(function(){
