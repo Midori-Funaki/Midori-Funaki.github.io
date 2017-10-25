@@ -37,7 +37,7 @@ $('#menuPortfolio').on("click",function(){
 
     $('.blackOverlay').css({
         'width':'350%',
-        'height':'100%',
+        'height':'150%',
         'position':'absolute',
         'top':'-170%',/*Adjusting Part*/
         'left':'-50%',
@@ -102,9 +102,9 @@ $('#menuSkills').on("click",function(){
 
     $('.blackOverlay').css({
         'width':'350%',
-        'height':'100%',
+        'height':'150%',
         'position':'absolute',
-        'top':'200%',/*Adjusting Part*/
+        'top':'150%',/*Adjusting Part*/
         'left':'-60%',
         'background':'black',
         'transform':'rotate(-30deg)'
@@ -167,9 +167,9 @@ $('#menuContact').on("click",function(){
 
     $('.blackOverlay').css({
         'width':'300%',
-        'height':'100%',
+        'height':'150%',
         'position':'absolute',
-        'top':'200%',/*Adjusting Part*/
+        'top':'260%',/*Adjusting Part*/
         'left':'-50%',
         'background':'black',
         'transform':'rotate(30deg)'
@@ -234,7 +234,7 @@ $('#menuAbout').on("click",function(){
         'width':'350%',
         'height':'140%',
         'position':'absolute',
-        'top':'-220%',/*Adjusting Part*/
+        'top':'-280%',/*Adjusting Part*/
         'left':'-60%',
         'background':'black',
         'transform':'rotate(-30deg)'
