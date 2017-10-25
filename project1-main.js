@@ -15,7 +15,7 @@ $('#menuPortfolio').on("click",function(){
     );
 
     $('.slideOverlay').css({
-        'width':'200%',
+        'width':'250%',
         'height':'61%',
         'position':'absolute',
         'top':'-140%',/*Adjusting Part*/
@@ -25,7 +25,7 @@ $('#menuPortfolio').on("click",function(){
     });
 
     $('.dotOverlay').css({
-        'width':'200%',
+        'width':'250%',
         'height':'80%',
         'position':'absolute',
         'top':'-150%',/*Adjusting Part*/
@@ -36,7 +36,7 @@ $('#menuPortfolio').on("click",function(){
     });
 
     $('.blackOverlay').css({
-        'width':'200%',
+        'width':'250%',
         'height':'100%',
         'position':'absolute',
         'top':'-170%',/*Adjusting Part*/
