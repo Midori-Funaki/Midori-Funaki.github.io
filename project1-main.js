@@ -80,7 +80,7 @@ $('#menuSkills').on("click",function(){
     );
 
     $('.slideOverlay').css({
-        'width':'200%',
+        'width':'250%',
         'height':'61%',
         'position':'absolute',
         'top':'200%',/*Adjusting Part*/
@@ -90,7 +90,7 @@ $('#menuSkills').on("click",function(){
     });
 
     $('.dotOverlay').css({
-        'width':'200%',
+        'width':'250%',
         'height':'80%',
         'position':'absolute',
         'top':'200%',/*Adjusting Part*/
@@ -101,7 +101,7 @@ $('#menuSkills').on("click",function(){
     });
 
     $('.blackOverlay').css({
-        'width':'200%',
+        'width':'350%',
         'height':'100%',
         'position':'absolute',
         'top':'200%',/*Adjusting Part*/
@@ -145,7 +145,7 @@ $('#menuContact').on("click",function(){
     );
 
     $('.slideOverlay').css({
-        'width':'200%',
+        'width':'250%',
         'height':'62%',
         'position':'absolute',
         'top':'200%',/*Adjusting Part*/
@@ -155,7 +155,7 @@ $('#menuContact').on("click",function(){
     });
 
     $('.dotOverlay').css({
-        'width':'200%',
+        'width':'250%',
         'height':'80%',
         'position':'absolute',
         'top':'200%',/*Adjusting Part*/
@@ -166,7 +166,7 @@ $('#menuContact').on("click",function(){
     });
 
     $('.blackOverlay').css({
-        'width':'200%',
+        'width':'300%',
         'height':'100%',
         'position':'absolute',
         'top':'200%',/*Adjusting Part*/
@@ -210,7 +210,7 @@ $('#menuAbout').on("click",function(){
     );
 
     $('.slideOverlay').css({
-        'width':'200%',
+        'width':'250%',
         'height':'61%',
         'position':'absolute',
         'top':'-140%',/*Adjusting Part*/
@@ -220,7 +220,7 @@ $('#menuAbout').on("click",function(){
     });
 
     $('.dotOverlay').css({
-        'width':'200%',
+        'width':'250%',
         'height':'80%',
         'position':'absolute',
         'top':'-150%',/*Adjusting Part*/
@@ -231,7 +231,7 @@ $('#menuAbout').on("click",function(){
     });
 
     $('.blackOverlay').css({
-        'width':'200%',
+        'width':'350%',
         'height':'140%',
         'position':'absolute',
         'top':'-220%',/*Adjusting Part*/
