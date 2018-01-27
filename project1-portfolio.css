@@ -1,94 +1,15 @@
-.sideBar{
-    background:rgb(164,196,0);
-}
-
 hr{
     width: 0;
-    border-color: rgb(164,196,0);
+    border-color: rgb(255,140,0);
     border-width: 7px;
     margin-bottom: 20px;
 }
-
-i{
-    color: rgb(0,138,0);
-}
-
-.navbar li{
-    color: white;
-}
-
-.navListGreen{
-    border-bottom: 0px solid white;
-}
-
-.iconBox{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.quickContact,
-#thankYou{
-    display: block;
-    margin: 40px auto 30px auto;
-    max-width: 50vw;
-    padding-top: 20px;
-}
-
-#thankYou{
-    font-weight: bold;
-    color: rgb(0,138,0);
-}
-
-#nameInput,
-#emailInput,
-#messageInput{
-    border: none;
-    box-shadow: none;
-    border-bottom: 1px solid gray;
-    border-radius: 0;
-}
-
-#messageInput{
-    height: 150px;
-}
-
-#messageSubmit{
-    display: block;
-    margin: auto;
-}
-
-#thankYou{
-    font-family: 'Merriweather',serif;
-    font-size: 16px;
-}
-
-@media (max-width:768px){
-    .sideBar{
-        background: none;
-    }
-
-    .navbar-toggle{
-        float: left;
-    }
-
-    .navbar li{
-        position: relative;
-        color: rgb(164,196,0);
-        transform: rotate(90deg);
-        margin-top: 30px;
-        padding-bottom: 0px;
-    }
-    
-}
-
-/*
 #orangeHome{
     position: absolute;
     left: 3vw;
     bottom: 3vh;
     z-index: 4;
 }
-
 #orangeHome img{
     width:16vw;
     height:16vw;
@@ -96,15 +17,17 @@ i{
     max-height: 100px;
     z-index: 5;
 }
-
 .col-xs-2,
 .col-sm-2,
 .col-md-2,
 .col-lg-2{
     padding-left: 0;
     padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18vh;
 }
-
 .col-xs-10,
 .col-sm-10,
 .col-md-10,
@@ -112,66 +35,60 @@ i{
     padding-left: 0;
     padding-right: 0;
 }
-
 .sideBar{
     background:rgb(255,178,102);
 }
-
 .sidebar-nav{
     height: 100vh;
     z-index: -1;
 }
-
 .sidebar-nav .navbar ul{
     float: none;
     display: block;
 }
-
 .sidebar-nav .navbar li{
     float: none;
     display: block;
 }
-
 .navbar-default{
     background: transparent;
     border: none;
     box-shadow: none;
 }
-
 .navbar-default .navbar-collapse{
     border: none;
 }
-
 .navbar-toggle{
     border-color: rgb(255,114,0);
 }
-
 .navbar li{
     margin-top: 50px;
     padding-bottom: 50px;
     color: rgb(255,229,204);
     text-align: center;
+    border-bottom: 0px solid rgb(255,229,204);
 }
-
-.rotate{
-    transform: rotate(90deg)
-}
-
-h1{
+h1, h3{
     font-family: 'Source Sans Pro',sans-serif;
     font-weight: 300;
 }
-
 p{
     font-family: 'Merriweather',serif;
 }
-
-.jumbotron{
-    height: 300px;
-    width: 250px;
-    min-width: 200px;
+.underline{
+    text-decoration: underline;
 }
-
+.jumbotron{
+    height: 45vh;
+    width: 75vw;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 45px;
+}
+.canvas-image{
+    max-width: 100%;
+    height: auto;
+}
 .contentPart{
     position:fixed;
     height: 100%;
@@ -180,20 +97,28 @@ p{
     padding-right: 2vw;
     padding-left: 3vw;
 }
-
+.gitref{
+    color:orange;
+}
+.gitref:hover{
+    color: white;
+}
+/*
+.container .jumbotron, 
+.container-fluid .jumbotron {
+    margin: 100px auto;
+}
+*/
 section{
     background: transparent;
 }
-
 @media (max-width:768px){
     .sideBar{
         background: none;
     }
-
     .navbar-toggle{
         float: left;
     }
-
     .navbar li{
         position: relative;
         color: rgb(255,114,0);
@@ -201,6 +126,14 @@ section{
         margin-top: 30px;
         padding-bottom: 0px;
     }
-    
+    .jumbotron{
+        height: 20vh;
+        width: 60vw;
+        overflow: hidden;
+        padding: 0;
+    }
+    .canvas-image{
+        max-width: 100%;
+        height: auto;
+    }
 }
-*/

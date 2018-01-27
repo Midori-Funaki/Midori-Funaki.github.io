@@ -1,0 +1,84 @@
+.sideBar{
+    background:rgb(164,196,0);
+}
+
+hr{
+    width: 0;
+    border-color: rgb(164,196,0);
+    border-width: 7px;
+    margin-bottom: 20px;
+}
+
+i{
+    color: rgb(0,138,0);
+}
+
+.navbar li{
+    color: white;
+}
+
+.navListGreen{
+    border-bottom: 0px solid white;
+}
+
+.iconBox{
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 65vw;
+}
+
+.quickContact,
+#thankYou{
+    display: block;
+    margin: 40px auto 30px auto;
+    max-width: 50vw;
+    padding-top: 20px;
+}
+
+#thankYou{
+    font-weight: bold;
+    color: rgb(0,138,0);
+}
+
+#nameInput,
+#emailInput,
+#messageInput{
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid gray;
+    border-radius: 0;
+}
+
+#messageInput{
+    height: 150px;
+}
+
+#messageSubmit{
+    display: block;
+    margin: auto;
+}
+
+#thankYou{
+    font-family: 'Merriweather',serif;
+    font-size: 16px;
+}
+
+@media (max-width:768px){
+    .sideBar{
+        background: none;
+    }
+
+    .navbar-toggle{
+        float: left;
+    }
+
+    .navbar li{
+        position: relative;
+        color: rgb(164,196,0);
+        transform: rotate(90deg);
+        margin-top: 30px;
+        padding-bottom: 0px;
+    }
+    
+}

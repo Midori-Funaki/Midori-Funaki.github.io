@@ -6,18 +6,24 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <!-- Animated CSS-->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!-- Animated CSS
         <link rel="stylesheet" href="css/animate.css">
+        -->
         <!-- Original CSS -->
-        <link rel="stylesheet" type="text/css" href="./project1-main.css">
+        <link rel="stylesheet" type="text/css" href="project1-main.css">
+        <link rel="stylesheet" type="text/css" href="project1-portfolio.css">
+        <link rel="stylesheet" type="text/css" href="project1-about.css">
+        <link rel="stylesheet" type="text/css" href="project1-contact.css">
+        <link rel="stylesheet" type="text/css" href="animation.css">
     </head>
     <body>
-        <section>
+        <section id="main_page" class="show">
             <div class="relativeFrame">
                 <!-- 0. Welcome Message -->
                 <div class="homeContainer text-center">
-                    <h1>Web Developer <br><span>from Hong Kong</span></h1>
-                    <p>Midori</p>
+                    <h1 class="darkgray">Web Developer <br><span class="darkgray">from Hong Kong</span></h1>
+                    <img src="./images/name.png">
                 </div>
                 <!-- 1. Portfolio -->
                 <div id="menuPortfolio" class="rotateFrame1">
@@ -51,13 +57,177 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </div><!-- ./relativeFrame -->
+        </section><!-- ./main_page -->
+        <!-- Portfolio Section -->
+        <section id="portfolio_page" class="hide">
+            <div class="relativeFrame">
+                <div class="portfolio-content-part">
+                    <div class="col-xs-10">
+                        <div class="contentPart text-center">
+                            <div class="jumbotron">
+                                <a href="https://midori-funaki.github.io/canvas/" target="_blank"><img class="canvas-image" src="./images/canvas-project.png"></a>
+                            </div>
+                            <h5 class="underline">Online Canvas</h5><br>                
+                            <h6>Built in with : HTML / CSS / JS / jQuery / jQuery UI / jscolor / Hammer.js<br><br>
+                                GitHub : <a class="gitref" href="https://github.com/Midori-Funaki/canvas">https://github.com/Midori-Funaki/canvas</a>
+                            </h6> 
+                            <div class="jumbotron">
+                                <a href="http://128.199.72.130/" target="_blank"><img class="canvas-image" src="./images/trip-app.png"></a>                                    
+                            </div>
+                            <h5 class="underline">Trip++</h5><br>
+                            <h6>Trip schedule planner with flight, hotel, transportation APIs</h6><br>
+                            <h6>Built in with : HTML / CSS / JS / jQuery / node.js / PostgreSQL / Redis / REST API / DigitalOcean<br><br>
+                                GitHub : <a class="gitref" href="https://github.com/Midori-Funaki/TripApp">https://github.com/Midori-Funaki/TripApp</a>
+                            </h6> 
+                            <div class="jumbotron">
+                                Coming Soon
+                            </div>
+                        </div><!-- contentPart -->
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="mini-menu-btn contact_btn"><span class="btn-title">contact</span></div>
+                        <div class="mini-menu-btn skills_btn"><span class="btn-title">skills</span></div>
+                        <div class="mini-menu-btn about_btn"><span class="btn-title">about</span></div>
+                        <div class="mini-menu-btn mini-menu-home home_btn"><span class="btn-title">home</span></div>
+                    </div>
+                </div>
+            </div><!-- ./relativeFrame -->
+        </section><!-- ./Portfolio Section -->
+        <!-- Skill Section -->
+        <section id="skills_page" class="hide">
+            <div class="relativeFrame">
+                <div class="portfolio-content-part">
+                    <div class="col-xs-10">
+                        <div class="chartBox">
+                            <div class="barContainer">
+                                <h3>HTML</h3>
+                                <div class="progress">
+                                    <div class="progress-bar progress-html" role="progressbar" style="width:0%" ariva-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div><!-- /. progress HTML-->
+                                <h3>CSS</h3>
+                                <div class="progress">
+                                    <div class="progress-bar progress-css" role="progressbar" style="width:0%" ariva-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div><!-- /. progress CSS-->
+                                <h3>JavaScript</h3>
+                                <div class="progress">
+                                    <div class="progress-bar progress-js" role="progressbar" style="width:0%" ariva-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div><!-- /. progress JavaScript-->
+                                <h3>JQuery</h3>
+                                <div class="progress">
+                                    <div class="progress-bar progress-jquery" role="progressbar" style="width:0%" ariva-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div><!-- /. progress JQuery-->
+                                <h3>node.js</h3>
+                                <div class="progress">
+                                    <div class="progress-bar progress-nodejs" role="progressbar" style="width:0%" ariva-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div><!-- /. progress JQuery-->
+                                <h3>Angular4</h3>
+                                <div class="progress">
+                                    <div class="progress-bar progress-angular" role="progressbar" style="width:0%" ariva-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div><!-- /. progress JQuery-->
+                                <h3>ionic</h3>
+                                <div class="progress">
+                                    <div class="progress-bar progress-ionic" role="progressbar" style="width:0%" ariva-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div><!-- /. progress JQuery-->
+                            </div>
+                        </div><!-- /. chartBox -->
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="mini-menu-btn portfolio_btn"><span class="btn-title">portfolio</span></div>
+                        <div class="mini-menu-btn contact_btn"><span class="btn-title">contact</span></div>
+                        <div class="mini-menu-btn about_btn"><span class="btn-title">about</span></div>
+                        <div class="mini-menu-btn mini-menu-home home_btn"><span class="btn-title">home</span></div>
+                    </div>
+                </div>
+            </div><!-- ./relativeFrame -->
+        </section><!-- ./Skill Section -->
+        <!-- Contact Section -->
+        <section id="contact_page" class="hide">
+            <div class="relativeFrame">
+                <div class="portfolio-content-part">
+                    <div class="col-xs-10">
+                        <p class="text-center">Get in touch</p>
+                        <div class="row iconBox text-center">
+                            <div class="iconBox">
+                                <div class="col-xs-6 col-sm-4 col-lg-3">
+                                    <a href="#"><i class="fa fa-github fa-5x contact-i" aria-hidden="true"></i></a>
+                                    <h6>github</h6>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-lg-3">
+                                    <a href="#"><i class="fa fa-linkedin-square fa-5x contact-i" aria-hidden="true"></i></a>
+                                    <h6>LinkedIn</h6>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-lg-3">
+                                    <a href="#"><i class="fa fa-facebook-square fa-5x contact-i" aria-hidden="true"></i></a>
+                                    <h6>Facebook</h6>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-lg-3">
+                                    <a href="#"><i class="fa fa-instagram fa-5x contact-i" aria-hidden="true"></i></a>
+                                    <h6>Instagram</h6>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-lg-3">
+                                    <a href="#"><i class="fa fa-twitter fa-5x contact-i" aria-hidden="true"></i></a>
+                                    <h6>Twitter</h6>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-lg-3">
+                                    <a href="mailto:example@email.com"><i class="fa fa-envelope-o fa-5x contact-i" aria-hidden="true"></i></a>
+                                    <h6>Email</h6>
+                                </div>
+                            </div><!-- /. iconBox -->
+                        </div>
+                        <div class="quickContact">
+                            <p id="errorMessage"></p>
+                            <div id="thankYou"></div>
+                            <h5>Quick Contact</h5>
+                            <div class="form-group">
+                                <input id="nameInput" class="form-control" type="text" value="" placeholder="Name"/>
+                            </div>
+                            <div class="form-group">
+                                <input id="emailInput" class="form-control" type="text" value="" placeholder="Email"/>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="messageInput" class="form-control" row="15" type="text" value="" placeholder="Message"></textarea>
+                            </div>
+                            <button id="messageSubmit" type="button" class="btn btn-success">Submit</button>
+                        </div>   
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="mini-menu-btn portfolio_btn"><span class="btn-title">portfolio</span></div>
+                        <div class="mini-menu-btn skills_btn"><span class="btn-title">skills</span></div>
+                        <div class="mini-menu-btn about_btn"><span class="btn-title">about</span></div>
+                        <div class="mini-menu-btn mini-menu-home home_btn"><span class="btn-title">home</span></div>
+                    </div>
+                </div>
+            </div><!-- ./relativeFrame -->
+        </section><!-- ./Contact Section -->
+        <!-- About Section -->
+        <section id="about_page" class="hide">
+            <div class="relativeFrame">
+                <div class="about-content-part">
+                    <div class="col-xs-10 about-intro">
+                        <img class="aboutMeImage" src="./images/2015withHirosan.jpg">
+                        <br><br>
+                        <h5>In 2016, I started to code on code.org website.<br>
+                        It is fun learning programming especially when<br>
+                        our society is developing more and more with<br>
+                        new amazing technologies.
+                        </h5>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="mini-menu-btn portfolio_btn"><span class="btn-title">portfolio</span></div>
+                        <div class="mini-menu-btn contact_btn"><span class="btn-title">contact</span></div>
+                        <div class="mini-menu-btn skills_btn"><span class="btn-title">skills</span></div>
+                        <div class="mini-menu-btn mini-menu-home home_btn"><span class="btn-title">home</span></div>
+                    </div>
+                </div>
+            </div><!-- ./relativeFrame -->
+        </section><!-- ./about_page -->
         <!-- JQuery-->
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <!-- Own JS-->
         <script src="./project1-main.js"></script>
+        <script src="./project1-about.js"></script>
     </body>
 </html>

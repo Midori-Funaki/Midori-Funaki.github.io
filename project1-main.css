@@ -1,10 +1,23 @@
+#main_page,
+#about_page,
+#skills_page{
+    overflow: hidden;
+}
+#portfolio_page{
+    overflow: scroll;
+}
+#about_page,
+#portfolio_page,
+#skills_page,
+#contact_page{
+    background:rgb(0,49,83);
+}
 .relativeFrame{
     position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
-
 .homeContainer{
     position: absolute;
     width: 100%;
@@ -12,16 +25,13 @@
     left: 0;
     top: 35%;
 }
-
 .homeContainer h1{
     font-size: 40px;
     font-family: 'Source Sans Pro',sans-serif;
 }
-
 .homeContainer span{
     font-size: 26px;
 }
-
 .homeContainer p{
     font-size: 48px;
     font-family: 'Merriweather',serif;
@@ -29,7 +39,6 @@
     font-weight: bold;
     animation-name: slideInDown;
 }
-
 .rotateFrame1,
 .rotateFrame2,
 .rotateFrame3,
@@ -38,7 +47,6 @@
     font-size: 24px;
     color: white;
 }
-
 .rotateFrame1{
     position: absolute;
     width: 70%;
@@ -50,7 +58,6 @@
     transform: rotate(30deg);
     background-image: url("./images/portfolio1.jpg");
 }
-
 .rotateFrame2{
     position: absolute;
     width: 70%;
@@ -62,7 +69,6 @@
     transform: rotate(-30deg);
     background-image: url("./images/skills1.jpg");
 }
-
 .rotateFrame3{
     position: absolute;
     width: 70%;
@@ -75,7 +81,6 @@
     background-image: url("./images/contact2.jpg");
     background-size: 50%;
 }
-
 .rotateFrame4{
     position: absolute;
     width: 70%;
@@ -87,7 +92,6 @@
     transform: rotate(-30deg);
     background-image: url("./images/about1.jpg");
 }
-
 .menuBottomSpace{
     height: 100%;
     display: flex;
@@ -95,50 +99,89 @@
     justify-content: center;
     padding-bottom: 25px;
 }
-
 .menuTopSpace{
     padding-top: 25px;
 }
-
 .overlay{
     position: absolute;
     width: 100%;
     height: 100%;
 }
-
 .overOrange{
     background: rgba(241,133,0,0.5);
 }
-
 .overPink{
     background: rgba(248,77,103,0.5);
 }
-
 .overGreen{
     background: rgba(91, 118, 3, 0.5);
 }
-
 .overYellow{
     background: rgba(243,216,77,0.5);
 }
-
 .overOrange:hover{
     background: rgba(241,133,0,0.9);
 }
-
 .overPink:hover{
     background: rgba(248,77,103,0.9);
 }
-
 .overGreen:hover{
     background: rgba(91, 118, 3, 0.9);
 }
-
 .overYellow:hover{
     background: rgba(243,216,77,0.9);
 }
-
-
+.hide{
+    display: none
+}
+.show{
+    display: inline
+}
+.sideBar{
+    background:rgb(255,132,188);
+}
+.navbar li{
+    color: rgb(255,204,229);
+}
+.navListPink{
+    border-bottom: 0px solid rgb(255,204,229);
+}
+.chartBox{
+    background: rgb(192,192,192);
+    box-sizing: border-box;
+    width: 50%;
+    height: 70%;
+    padding-top: 20px;
+    border-radius: 40px;
+    margin: 50px auto;
+}
+.progress{
+    height: 12px;
+    margin-bottom: 28px;
+}
+.barContainer h3{
+    font-family:  'Source Sans Pro',sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1;
+}
+.barContainer{
+    padding: 10px 50px;
+}
+.progress-bar{
+    line-height: 3px;
+    height: 100%;
+    background-image: linear-gradient(to bottom,rgb(255,132,188) 0,rgb(207,74,131) 100%);
+}
+.contact-i{
+    color: white;
+}
+.contact-i:hover{
+    color: rgba(91, 118, 3, 1);
+}
+.darkgray{
+    color: rgb(96,96,96);
+}
 @media screen and (max-width:880px){
     .rotateFrame1{
         width: 100%;
@@ -148,7 +191,6 @@
         top: -45%;
         background-size: 80%;
     }
-
     .rotateFrame2{
         width: 100%;
         height: 70%;
@@ -156,7 +198,6 @@
         top: 75%;
         transform: rotate(-40deg);
     }
-
     .rotateFrame3{
         width: 100%;
         height: 70%;
@@ -165,7 +206,6 @@
         transform: rotate(40deg);
         background-size: 80%;
     }
-
     .rotateFrame4{
         width: 100%;
         height: 70%;
@@ -174,4 +214,29 @@
         transform: rotate(-40deg);
         background-size: 230%
     }
+    .sideBar{
+        background: none;
+    }
+    .navbar-toggle{
+        float: left;
+    }
+    .navbar li{
+        position: relative;
+        color: rgb(255,132,188);
+        transform: rotate(90deg);
+        margin-top: 30px;
+        padding-bottom: 0px;
+    }
+    .chartBox{
+        width: 70%;
+    }
+    .barContainer{
+        padding: 10px 10px;
+    }
+}
+
+@keyframes diamond{
+    0%{transform:rotate(45deg) scale(0)}
+    50%{transform:rotate(45deg) scale(3)}
+    100%{transform:rotate(45deg) scale(0)}
 }

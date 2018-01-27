@@ -1,258 +1,195 @@
-$('#menuPortfolio').on("click",function(){
-    $('.relativeFrame').append(
-        "<div class='slideOverlay'>"+
-        "</div>"
-    );
-
-    $('.relativeFrame').append(
+const switchToPortfolio = function(prev){
+    $('body').append(
         "<div class='dotOverlay'>"+
         "</div>"
     );
-
-    $('.relativeFrame').append(
-        "<div class='blackOverlay'>"+
-        "</div>"
-    );
-
-    $('.slideOverlay').css({
-        'width':'250%',
-        'height':'61%',
-        'position':'absolute',
-        'top':'-140%',/*Adjusting Part*/
-        'left':'-50%',
-        'background':'rgb(63,198,195)',
-        'transform':'rotate(30deg)'
-    });
-
     $('.dotOverlay').css({
-        'width':'250%',
-        'height':'80%',
+        'height':'100vh',
+        'width':'100vh',
         'position':'absolute',
-        'top':'-150%',/*Adjusting Part*/
-        'left':'-50%',
-        'background-image':"url('./images/dotOrange.jpg')",
+        'top':'50%',
+        'left':'50%',
+        'margin-top': '-50vh',
+        'margin-left': '-50vh',
+        'background':'rgba(241,133,0,1)',
         'background-size':'100%',
-        'transform':'rotate(30deg)'
+        'animation':'diamond 1.2s ease-in-out'
     });
-
-    $('.blackOverlay').css({
-        'width':'350%',
-        'height':'150%',
-        'position':'absolute',
-        'top':'-170%',/*Adjusting Part*/
-        'left':'-50%',
-        'background':'black',
-        'transform':'rotate(30deg)'
-    });
-
     setTimeout(function(){
-        window.location.href = './subPages/project1-portfolio.html'
-    },2800);
+        $(prev).removeClass('show');
+        $(prev).addClass('hide');
+        $('#portfolio_page').removeClass('hide');
+        $('#portfolio_page').addClass('show');
+    },600);
+    setTimeout(function(){
+        $('.dotOverlay').addClass('hide');
+    },1185);
+}
 
-    $('.slideOverlay').animate({
-        'top':'200%',
-    },4000);
-
-    $('.dotOverlay').delay(280).animate({
-        'top':'200%',
-    },4200);
-
-    $('.blackOverlay').delay(1000).animate({
-        'top':'200%',
-    },3850);
-})
-
-
-$('#menuSkills').on("click",function(){
-    $('.relativeFrame').append(
-        "<div class='slideOverlay'>"+
-        "</div>"
-    );
-
-    $('.relativeFrame').append(
+const switchToSkills = function(prev){
+    $('body').append(
         "<div class='dotOverlay'>"+
         "</div>"
     );
-
-    $('.relativeFrame').append(
-        "<div class='blackOverlay'>"+
-        "</div>"
-    );
-
-    $('.slideOverlay').css({
-        'width':'250%',
-        'height':'61%',
-        'position':'absolute',
-        'top':'200%',/*Adjusting Part*/
-        'left':'-60%',
-        'background':'rgb(63,198,195)',
-        'transform':'rotate(-30deg)'
-    });
-
     $('.dotOverlay').css({
-        'width':'250%',
-        'height':'80%',
+        'height':'100vh',
+        'width':'100vh',
         'position':'absolute',
-        'top':'200%',/*Adjusting Part*/
-        'left':'-60%',
-        'background-image':"url('./images/dotPink.jpg')",
+        'top':'50%',
+        'left':'50%',
+        'margin-top': '-50vh',
+        'margin-left': '-50vh',
+        'background':'rgba(248,77,103,1)',
         'background-size':'100%',
-        'transform':'rotate(-30deg)'
+        'animation':'diamond 1.2s ease-in-out'
     });
-
-    $('.blackOverlay').css({
-        'width':'350%',
-        'height':'150%',
-        'position':'absolute',
-        'top':'150%',/*Adjusting Part*/
-        'left':'-60%',
-        'background':'black',
-        'transform':'rotate(-30deg)'
-    });
-
     setTimeout(function(){
-        window.location.href = './subPages/project1-skills.html'
-    },2800);
+        $(prev).removeClass('show');
+        $(prev).addClass('hide');
+        $('#skills_page').removeClass('hide');
+        $('#skills_page').addClass('show');
+    },600);
+    setTimeout(function(){
+        $('.dotOverlay').addClass('hide');
+    },1185);
+}
 
-    $('.slideOverlay').animate({
-        'top':'-140%',
-    },4000);
-
-    $('.dotOverlay').delay(260).animate({
-        'top':'-150%',
-        'left':'-100%'
-    },4500);
-
-    $('.blackOverlay').delay(1000).animate({
-        'top':'-170%',
-    },3800);
-})
-
-$('#menuContact').on("click",function(){
-    $('.relativeFrame').append(
-        "<div class='slideOverlay'>"+
-        "</div>"
-    );
-
-    $('.relativeFrame').append(
+const switchToContact = function(prev){
+    $('body').append(
         "<div class='dotOverlay'>"+
         "</div>"
     );
-
-    $('.relativeFrame').append(
-        "<div class='blackOverlay'>"+
-        "</div>"
-    );
-
-    $('.slideOverlay').css({
-        'width':'250%',
-        'height':'62%',
-        'position':'absolute',
-        'top':'200%',/*Adjusting Part*/
-        'left':'-50%',
-        'background':'rgb(63,198,195)',
-        'transform':'rotate(30deg)'
-    });
-
     $('.dotOverlay').css({
-        'width':'250%',
-        'height':'80%',
+        'height':'100vh',
+        'width':'100vh',
         'position':'absolute',
-        'top':'200%',/*Adjusting Part*/
-        'left':'-100%',
-        'background-image':"url('./images/dotGreen.jpg')",
+        'top':'50%',
+        'left':'50%',
+        'margin-top': '-50vh',
+        'margin-left': '-50vh',
+        'background':'rgba(91, 118, 3, 1)',
         'background-size':'100%',
-        'transform':'rotate(30deg)'
+        'animation':'diamond 1.2s ease-in-out'
     });
-
-    $('.blackOverlay').css({
-        'width':'300%',
-        'height':'150%',
-        'position':'absolute',
-        'top':'260%',/*Adjusting Part*/
-        'left':'-50%',
-        'background':'black',
-        'transform':'rotate(30deg)'
-    });
-
     setTimeout(function(){
-        window.location.href = './subPages/project1-contact.html'
-    },2800);
+        $(prev).removeClass('show');
+        $(prev).addClass('hide');
+        $('#contact_page').removeClass('hide');
+        $('#contact_page').addClass('show');
+    },600);
+    setTimeout(function(){
+        $('.dotOverlay').addClass('hide');
+    },1185);
+}
 
-    $('.slideOverlay').animate({
-        'top':'-140%',
-    },4000);
-
-    $('.dotOverlay').delay(280).animate({
-        'top':'-150%',
-        'left':'0'
-    },4200);
-
-    $('.blackOverlay').delay(1000).animate({
-        'top':'-170%',
-    },3850);
-})
-
-$('#menuAbout').on("click",function(){
-    $('.relativeFrame').append(
-        "<div class='slideOverlay'>"+
-        "</div>"
-    );
-
-    $('.relativeFrame').append(
+const switchToAbout = function(prev){
+    $('body').append(
         "<div class='dotOverlay'>"+
         "</div>"
     );
+    $('.dotOverlay').css({
+        'height':'100vh',
+        'width':'100vh',
+        'position':'absolute',
+        'top':'50%',
+        'left':'50%',
+        'margin-top': '-50vh',
+        'margin-left': '-50vh',
+        'background':'yellow',
+        'background-size':'100%',
+        'animation':'diamond 1.2s ease-in-out'
+    });
+    setTimeout(function(){
+        $(prev).removeClass('show');
+        $(prev).addClass('hide');
+        $('#about_page').removeClass('hide');
+        $('#about_page').addClass('show');
+    },600);
+    setTimeout(function(){
+        $('.dotOverlay').addClass('hide');
+    },1185);
+}
 
-    $('.relativeFrame').append(
-        "<div class='blackOverlay'>"+
+const switchToHome = function(prev){
+    $('body').append(
+        "<div class='dotOverlay'>"+
         "</div>"
     );
-
-    $('.slideOverlay').css({
-        'width':'250%',
-        'height':'61%',
-        'position':'absolute',
-        'top':'-140%',/*Adjusting Part*/
-        'left':'-60%',
-        'background':'rgb(63,198,195)',
-        'transform':'rotate(-30deg)'
-    });
-
     $('.dotOverlay').css({
-        'width':'250%',
-        'height':'80%',
+        'height':'100vh',
+        'width':'100vh',
         'position':'absolute',
-        'top':'-150%',/*Adjusting Part*/
-        'left':'-60%',
-        'background-image':"url('./images/dotYellow.jpg')",
+        'top':'50%',
+        'left':'50%',
+        'margin-top': '-50vh',
+        'margin-left': '-50vh',
+        'background':'white',
         'background-size':'100%',
-        'transform':'rotate(-30deg)'
+        'animation':'diamond 1.2s ease-in-out'
     });
-
-    $('.blackOverlay').css({
-        'width':'350%',
-        'height':'140%',
-        'position':'absolute',
-        'top':'-280%',/*Adjusting Part*/
-        'left':'-60%',
-        'background':'black',
-        'transform':'rotate(-30deg)'
-    });
-
     setTimeout(function(){
-        window.location.href = './subPages/project1-about.html'
-    },2800);
+        $(prev).removeClass('show');
+        $(prev).addClass('hide');
+        $('#main_page').removeClass('hide');
+        $('#main_page').addClass('show');
+    },600);
+    setTimeout(function(){
+        $('.dotOverlay').addClass('hide');
+    },1185);
+}
 
-    $('.slideOverlay').animate({
-        'top':'200%'
-    },4000);
+$().ready(function(){
+    $('#menuPortfolio').on("click",function(){
+        switchToPortfolio('#main_page');
+    })
 
-    $('.dotOverlay').delay(260).animate({
-        'top':'200%'
-    },4500);
+    $('.portfolio_btn').on("click",function(e){
+        let section = $( e.target ).closest( "section" )[0].id;
+        switchToPortfolio(`#${section}`);
+    })
 
-    $('.blackOverlay').delay(1000).animate({
-        'top':'200%'
-    },3800);
-})
+    $('#menuSkills').on("click",function(){
+        switchToSkills('#main_page');
+    })
+
+    $('.skills_btn').on("click",function(e){
+        let section = $( e.target ).closest( "section" )[0].id;        
+        switchToSkills(`#${section}`);
+    })
+
+    $('#menuContact').on("click",function(){
+        switchToContact('#main_page');
+    })
+
+    $('.contact_btn').on("click",function(e){
+        let section = $( e.target ).closest( "section" )[0].id;                
+        switchToContact(`#${section}`);
+    })
+
+    $('#menuAbout').on("click",function(){
+        switchToAbout('#main_page');
+    });
+
+    $('.about_btn').on("click",function(e){
+        let section = $( e.target ).closest( "section" )[0].id;                
+        switchToAbout(`#${section}`);
+    })
+
+    $('.home_btn').on("click",function(e){
+        let section = $( e.target ).closest( "section" )[0].id;
+        switchToHome(`#${section}`);
+    })
+
+    //Cube transition
+    $('#skills_page').ready(function(){
+        setTimeout(function(){
+            $('.progress-html').animate({width:'60%'},"slower");
+            $('.progress-css').animate({width:'60%'},"slower");
+            $('.progress-js').animate({width:'50%'},"slow");
+            $('.progress-jquery').animate({width:'55%'},"slow");
+            $('.progress-nodejs').animate({width:'45%'},"slower");
+            $('.progress-angular').animate({width:'30%'},"slower");
+            $('.progress-ionic').animate({width:'25%'},"slow");
+        },700);
+    })
+});
