@@ -41,42 +41,6 @@ h6{
 .about-intro{
     margin-top: 18vh;
 }
-.mini-menu-btn{
-    height: 70px;
-    width: 70px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 47px; 
-    background-color: rgba(147,147,147,0.7);
-}
-.mini-menu-btn:hover{
-    transform: rotate(45deg);
-}
-.mini-menu-btn:hover span{
-    transform: rotate(-45deg);
-    color: white;
-}
-.mini-menu-home:hover span{
-    transform: rotate(-45deg);
-    color: black;
-}
-.portfolio_btn:hover{
-    background-color: rgba(241,133,0,0.9);
-}
-.skills_btn:hover{
-    background-color:rgba(248,77,103,0.9);
-}
-.contact_btn:hover{
-    background-color: rgba(91, 118, 3, 0.9);
-}
-.about_btn:hover{
-    background-color: rgba(243,216,77,0.9);
-}
-.home_btn:hover{
-    background-color: white;
-}
 @media (max-width:768px){
     .sideBar{
         background: none;
