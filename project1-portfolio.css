@@ -112,6 +112,9 @@ p{
 section{
     background: transparent;
 }
+.each-project-container{
+    padding: 20px 0 40px 0;
+}
 @media (max-width:768px){
     .sideBar{
         background: none;
